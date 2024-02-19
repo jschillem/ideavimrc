@@ -5,16 +5,25 @@ set commentary
 set easymotion
 set ReplaceWithRegister
 
-set history=200
+set history=500
 set showcmd
+set showmode
 set scrolloff=5
+set hlsearch
 set incsearch
 set ignorecase
 set smartcase
+set gdefault
 set backspace=indent,eol,start
 
 nnoremap <Leader>nh :nohlsearch<CR>
 nnoremap <Leader>ff :action GotoFile <CR>
+
+nnoremap sv :action SplitVertically<CR>
+nnoremap sh :action SplitHorizontally<CR>
+
+nnoremap <Leader>rn :action RenameElement<CR>
+nnoremap <leader>ca :action ShowIntentionActions<CR>
 
 set showmode
 set modeline
